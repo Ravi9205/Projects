@@ -9,40 +9,39 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var emailText = ""
-    @State var passwordText = ""
+  @StateObject var viewModel = LoginViewModel()
+    
     
     var body: some View {
         
         NavigationView{
             VStack{
                 // Header
-                HeaderView()
+                HeaderView(title:"To Do List", subtitle:"Gets Things Done", angle: 15, backgroundColor: .pink)
                 
                 //Login  Form
                 
                 Form{
-                    TextField("Email Address",text:$emailText)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                    SecureField("Password ",text:$passwordText)
-                        .textFieldStyle(DefaultTextFieldStyle())
-                    Button{
-                        // Attemp to Login
-                        
-                    }label:{
-                        
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(.blue)
-                            Text("Login")
-                                .foregroundColor(.white)
-                                .bold()
-                        }
-                    }
                     
+                    if  !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
+                        
+                    }
+            
+                    TextField("Email Address",text:$viewModel.email)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                        .autocapitalization(.none)
+                        .disableAutocorrection(true)
+                    SecureField("Password ",text:$viewModel.password)
+                        .textFieldStyle(DefaultTextFieldStyle())
+                   
+                    TLButtonView(title:"Login",background: .blue) {
+                        //Attemp Login
+                        viewModel.login()
+                    }
                 }
-                
-                
+                .offset(y:-50)
                 // Create Account
                 
                 VStack{
@@ -54,7 +53,6 @@ struct LoginView: View {
                 Spacer()
             }
         }
-        
         
     }
 }
