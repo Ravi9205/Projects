@@ -83,7 +83,8 @@ struct UserDataRepository:UserRepository{
 
             return result
 
-        } catch let error {
+        }
+        catch let error {
             debugPrint(error)
         }
 
