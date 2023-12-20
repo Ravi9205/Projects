@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D202C2B4F4352A733BFACDF /* Pods_GPTAI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17A4DBCFF97F27C9E6B76B92 /* Pods_GPTAI.framework */; };
+		B37C637F2AFD4C450082CCB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C637E2AFD4C450082CCB7 /* AppDelegate.swift */; };
+		B37C63812AFD4C450082CCB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C63802AFD4C450082CCB7 /* SceneDelegate.swift */; };
+		B37C63832AFD4C450082CCB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C63822AFD4C450082CCB7 /* ViewController.swift */; };
+		B37C63862AFD4C450082CCB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37C63842AFD4C450082CCB7 /* Main.storyboard */; };
+		B37C63882AFD4C490082CCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37C63872AFD4C490082CCB7 /* Assets.xcassets */; };
+		B37C638B2AFD4C490082CCB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B37C63892AFD4C490082CCB7 /* LaunchScreen.storyboard */; };
+		B37C63962AFD4C4A0082CCB7 /* GPTAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C63952AFD4C4A0082CCB7 /* GPTAITests.swift */; };
+		B37C63A02AFD4C4A0082CCB7 /* GPTAIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C639F2AFD4C4A0082CCB7 /* GPTAIUITests.swift */; };
+		B37C63A22AFD4C4A0082CCB7 /* GPTAIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C63A12AFD4C4A0082CCB7 /* GPTAIUITestsLaunchTests.swift */; };
+		B37C63AF2AFD4DB50082CCB7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37C63AE2AFD4DB50082CCB7 /* APIManager.swift */; };
+		B37E129D2AFE37EF00C7BDA4 /* Highlighter in Frameworks */ = {isa = PBXBuildFile; productRef = B37E129C2AFE37EF00C7BDA4 /* Highlighter */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B37C63922AFD4C4A0082CCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37C63732AFD4C450082CCB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37C637A2AFD4C450082CCB7;
+			remoteInfo = GPTAI;
+		};
+		B37C639C2AFD4C4A0082CCB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37C63732AFD4C450082CCB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37C637A2AFD4C450082CCB7;
+			remoteInfo = GPTAI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17A4DBCFF97F27C9E6B76B92 /* Pods_GPTAI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPTAI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22B050C7A72E48EBBB7F36FB /* Pods-GPTAI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTAI.debug.xcconfig"; path = "Target Support Files/Pods-GPTAI/Pods-GPTAI.debug.xcconfig"; sourceTree = "<group>"; };
+		B37C637B2AFD4C450082CCB7 /* GPTAI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPTAI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37C637E2AFD4C450082CCB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37C63802AFD4C450082CCB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B37C63822AFD4C450082CCB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B37C63852AFD4C450082CCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B37C63872AFD4C490082CCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37C638A2AFD4C490082CCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B37C638C2AFD4C490082CCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37C63912AFD4C4A0082CCB7 /* GPTAITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTAITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37C63952AFD4C4A0082CCB7 /* GPTAITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAITests.swift; sourceTree = "<group>"; };
+		B37C639B2AFD4C4A0082CCB7 /* GPTAIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GPTAIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37C639F2AFD4C4A0082CCB7 /* GPTAIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAIUITests.swift; sourceTree = "<group>"; };
+		B37C63A12AFD4C4A0082CCB7 /* GPTAIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPTAIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B37C63AE2AFD4DB50082CCB7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		C25EF7FD84B5D9D745100431 /* Pods-GPTAI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPTAI.release.xcconfig"; path = "Target Support Files/Pods-GPTAI/Pods-GPTAI.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37C63782AFD4C450082CCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37E129D2AFE37EF00C7BDA4 /* Highlighter in Frameworks */,
+				0D202C2B4F4352A733BFACDF /* Pods_GPTAI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C638E2AFD4C4A0082CCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C63982AFD4C4A0082CCB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1097BA87E065FEB74135F05C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22B050C7A72E48EBBB7F36FB /* Pods-GPTAI.debug.xcconfig */,
+				C25EF7FD84B5D9D745100431 /* Pods-GPTAI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8FDB5B8883453395CE67DA97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17A4DBCFF97F27C9E6B76B92 /* Pods_GPTAI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B37C63722AFD4C450082CCB7 = {
+			isa = PBXGroup;
+			children = (
+				B37C637D2AFD4C450082CCB7 /* GPTAI */,
+				B37C63942AFD4C4A0082CCB7 /* GPTAITests */,
+				B37C639E2AFD4C4A0082CCB7 /* GPTAIUITests */,
+				B37C637C2AFD4C450082CCB7 /* Products */,
+				1097BA87E065FEB74135F05C /* Pods */,
+				8FDB5B8883453395CE67DA97 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B37C637C2AFD4C450082CCB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37C637B2AFD4C450082CCB7 /* GPTAI.app */,
+				B37C63912AFD4C4A0082CCB7 /* GPTAITests.xctest */,
+				B37C639B2AFD4C4A0082CCB7 /* GPTAIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37C637D2AFD4C450082CCB7 /* GPTAI */ = {
+			isa = PBXGroup;
+			children = (
+				B37C637E2AFD4C450082CCB7 /* AppDelegate.swift */,
+				B37C63802AFD4C450082CCB7 /* SceneDelegate.swift */,
+				B37C63822AFD4C450082CCB7 /* ViewController.swift */,
+				B37C63AE2AFD4DB50082CCB7 /* APIManager.swift */,
+				B37C63842AFD4C450082CCB7 /* Main.storyboard */,
+				B37C63872AFD4C490082CCB7 /* Assets.xcassets */,
+				B37C63892AFD4C490082CCB7 /* LaunchScreen.storyboard */,
+				B37C638C2AFD4C490082CCB7 /* Info.plist */,
+			);
+			path = GPTAI;
+			sourceTree = "<group>";
+		};
+		B37C63942AFD4C4A0082CCB7 /* GPTAITests */ = {
+			isa = PBXGroup;
+			children = (
+				B37C63952AFD4C4A0082CCB7 /* GPTAITests.swift */,
+			);
+			path = GPTAITests;
+			sourceTree = "<group>";
+		};
+		B37C639E2AFD4C4A0082CCB7 /* GPTAIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B37C639F2AFD4C4A0082CCB7 /* GPTAIUITests.swift */,
+				B37C63A12AFD4C4A0082CCB7 /* GPTAIUITestsLaunchTests.swift */,
+			);
+			path = GPTAIUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37C637A2AFD4C450082CCB7 /* GPTAI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37C63A52AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAI" */;
+			buildPhases = (
+				F58886ABFFA24A0ADB70E5C5 /* [CP] Check Pods Manifest.lock */,
+				B37C63772AFD4C450082CCB7 /* Sources */,
+				B37C63782AFD4C450082CCB7 /* Frameworks */,
+				B37C63792AFD4C450082CCB7 /* Resources */,
+				EDD7DD7FC890AB331B796CE7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPTAI;
+			packageProductDependencies = (
+				B37E129C2AFE37EF00C7BDA4 /* Highlighter */,
+			);
+			productName = GPTAI;
+			productReference = B37C637B2AFD4C450082CCB7 /* GPTAI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B37C63902AFD4C4A0082CCB7 /* GPTAITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37C63A82AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAITests" */;
+			buildPhases = (
+				B37C638D2AFD4C4A0082CCB7 /* Sources */,
+				B37C638E2AFD4C4A0082CCB7 /* Frameworks */,
+				B37C638F2AFD4C4A0082CCB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37C63932AFD4C4A0082CCB7 /* PBXTargetDependency */,
+			);
+			name = GPTAITests;
+			productName = GPTAITests;
+			productReference = B37C63912AFD4C4A0082CCB7 /* GPTAITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B37C639A2AFD4C4A0082CCB7 /* GPTAIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37C63AB2AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAIUITests" */;
+			buildPhases = (
+				B37C63972AFD4C4A0082CCB7 /* Sources */,
+				B37C63982AFD4C4A0082CCB7 /* Frameworks */,
+				B37C63992AFD4C4A0082CCB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37C639D2AFD4C4A0082CCB7 /* PBXTargetDependency */,
+			);
+			name = GPTAIUITests;
+			productName = GPTAIUITests;
+			productReference = B37C639B2AFD4C4A0082CCB7 /* GPTAIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37C63732AFD4C450082CCB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					B37C637A2AFD4C450082CCB7 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					B37C63902AFD4C4A0082CCB7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B37C637A2AFD4C450082CCB7;
+					};
+					B37C639A2AFD4C4A0082CCB7 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = B37C637A2AFD4C450082CCB7;
+					};
+				};
+			};
+			buildConfigurationList = B37C63762AFD4C450082CCB7 /* Build configuration list for PBXProject "GPTAI" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37C63722AFD4C450082CCB7;
+			packageReferences = (
+				B37E129B2AFE37EF00C7BDA4 /* XCRemoteSwiftPackageReference "HighlighterSwift" */,
+			);
+			productRefGroup = B37C637C2AFD4C450082CCB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37C637A2AFD4C450082CCB7 /* GPTAI */,
+				B37C63902AFD4C4A0082CCB7 /* GPTAITests */,
+				B37C639A2AFD4C4A0082CCB7 /* GPTAIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37C63792AFD4C450082CCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37C638B2AFD4C490082CCB7 /* LaunchScreen.storyboard in Resources */,
+				B37C63882AFD4C490082CCB7 /* Assets.xcassets in Resources */,
+				B37C63862AFD4C450082CCB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C638F2AFD4C4A0082CCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C63992AFD4C4A0082CCB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EDD7DD7FC890AB331B796CE7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPTAI/Pods-GPTAI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GPTAI/Pods-GPTAI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GPTAI/Pods-GPTAI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F58886ABFFA24A0ADB70E5C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPTAI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37C63772AFD4C450082CCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37C63AF2AFD4DB50082CCB7 /* APIManager.swift in Sources */,
+				B37C63832AFD4C450082CCB7 /* ViewController.swift in Sources */,
+				B37C637F2AFD4C450082CCB7 /* AppDelegate.swift in Sources */,
+				B37C63812AFD4C450082CCB7 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C638D2AFD4C4A0082CCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37C63962AFD4C4A0082CCB7 /* GPTAITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37C63972AFD4C4A0082CCB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37C63A22AFD4C4A0082CCB7 /* GPTAIUITestsLaunchTests.swift in Sources */,
+				B37C63A02AFD4C4A0082CCB7 /* GPTAIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B37C63932AFD4C4A0082CCB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37C637A2AFD4C450082CCB7 /* GPTAI */;
+			targetProxy = B37C63922AFD4C4A0082CCB7 /* PBXContainerItemProxy */;
+		};
+		B37C639D2AFD4C4A0082CCB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37C637A2AFD4C450082CCB7 /* GPTAI */;
+			targetProxy = B37C639C2AFD4C4A0082CCB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B37C63842AFD4C450082CCB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37C63852AFD4C450082CCB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B37C63892AFD4C490082CCB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B37C638A2AFD4C490082CCB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B37C63A32AFD4C4A0082CCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B37C63A42AFD4C4A0082CCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37C63A62AFD4C4A0082CCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B050C7A72E48EBBB7F36FB /* Pods-GPTAI.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPTAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B37C63A72AFD4C4A0082CCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C25EF7FD84B5D9D745100431 /* Pods-GPTAI.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GPTAI/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B37C63A92AFD4C4A0082CCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTAI.app/GPTAI";
+			};
+			name = Debug;
+		};
+		B37C63AA2AFD4C4A0082CCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GPTAI.app/GPTAI";
+			};
+			name = Release;
+		};
+		B37C63AC2AFD4C4A0082CCB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPTAI;
+			};
+			name = Debug;
+		};
+		B37C63AD2AFD4C4A0082CCB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = makemycoolApp.GPTAIUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GPTAI;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37C63762AFD4C450082CCB7 /* Build configuration list for PBXProject "GPTAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37C63A32AFD4C4A0082CCB7 /* Debug */,
+				B37C63A42AFD4C4A0082CCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37C63A52AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37C63A62AFD4C4A0082CCB7 /* Debug */,
+				B37C63A72AFD4C4A0082CCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37C63A82AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37C63A92AFD4C4A0082CCB7 /* Debug */,
+				B37C63AA2AFD4C4A0082CCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37C63AB2AFD4C4A0082CCB7 /* Build configuration list for PBXNativeTarget "GPTAIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37C63AC2AFD4C4A0082CCB7 /* Debug */,
+				B37C63AD2AFD4C4A0082CCB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B37E129B2AFE37EF00C7BDA4 /* XCRemoteSwiftPackageReference "HighlighterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smittytone/HighlighterSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B37E129C2AFE37EF00C7BDA4 /* Highlighter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B37E129B2AFE37EF00C7BDA4 /* XCRemoteSwiftPackageReference "HighlighterSwift" */;
+			productName = Highlighter;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B37C63732AFD4C450082CCB7 /* Project object */;
+}
